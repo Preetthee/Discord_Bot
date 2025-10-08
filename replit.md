@@ -14,8 +14,9 @@ The bot is fully functional and ready to use. It connects to Discord using a bot
 
 ## Recent Changes (October 8, 2025)
 - Set up Python 3.11 environment
-- Installed discord.py and python-dotenv dependencies
+- Installed discord.py, python-dotenv, and Flask dependencies
 - Fixed incomplete `assign` command with proper role assignment logic and error handling
+- Added Flask web server on port 5000 for status monitoring and uptime pings
 - Configured Discord Bot workflow to run with console output
 - Updated .gitignore for Python project best practices
 - Added DISCORD_TOKEN to Replit Secrets
@@ -23,8 +24,8 @@ The bot is fully functional and ready to use. It connects to Discord using a bot
 ## Project Architecture
 
 ### Main Components
-- **main.py**: Main bot file containing all bot logic, events, and commands
-- **requirements.txt**: Python dependencies (discord.py, python-dotenv)
+- **main.py**: Main bot file containing all bot logic, events, commands, and Flask web server
+- **requirements.txt**: Python dependencies (discord.py, python-dotenv, flask)
 - **discord.log**: Bot logging output (gitignored)
 
 ### Bot Configuration
@@ -54,9 +55,16 @@ The bot is fully functional and ready to use. It connects to Discord using a bot
   - Status: Running
   - Output: Console logs showing bot status and events
 
+### Web Server
+- **Port**: 5000
+- **Endpoint**: `/` - Returns "Bot is alive!" status message
+- **Purpose**: Status monitoring and uptime ping endpoint for services like UptimeRobot
+- **Implementation**: Flask server running in a separate thread alongside the Discord bot
+
 ## Dependencies
 - discord.py (2.6.3): Discord API wrapper
 - python-dotenv (1.1.1): Environment variable management
+- flask (3.1.2): Web server for status endpoint
 - Python 3.11: Runtime environment
 
 ## How to Use
