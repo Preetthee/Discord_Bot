@@ -40,7 +40,23 @@ async def hello(ctx):
     await ctx.send(f"Hello {ctx.author.mention}")
 
 @mica.command()
-async def assign(ctx):
-    role = discord.utils.get()
+async def assign(ctx, *, role_name: str):
+    if not ctx.guild:
+        await ctx.send("This command can only be used in a server!")
+        return
+    
+    role = discord.utils.get(ctx.guild.roles, name=role_name)
+    
+    if not role:
+        await ctx.send(f"Role '{role_name}' not found!")
+        return
+    
+    try:
+        await ctx.author.add_roles(role)
+        await ctx.send(f"Successfully assigned the {role.name} role to {ctx.author.mention}!")
+    except discord.Forbidden:
+        await ctx.send("I don't have permission to assign this role!")
+    except discord.HTTPException:
+        await ctx.send("Failed to assign role. Please try again.")
 
 mica.run(token, log_handler=handler, log_level=logging.DEBUG)
