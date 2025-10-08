@@ -44,3 +44,26 @@
 [30;1m2025-10-08 17:47:15[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
 [30;1m2025-10-08 17:47:56[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 7.
 [30;1m2025-10-08 17:47:56[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:48:24[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': 'VOICE_STATE_UPDATE', 's': 8, 'op': 0, 'd': {'member': {'user': {'username': 'blacklxmoin4175', 'public_flags': 0, 'primary_guild': None, 'id': '311225013648752643', 'global_name': 'Mohidul Hasan', 'display_name_styles': None, 'display_name': 'Mohidul Hasan', 'discriminator': '0', 'collectibles': None, 'bot': False, 'avatar_decoration_data': None, 'avatar': '016715016fff46c33fd817fa4bbb1322'}, 'roles': ['1413770623464902666'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2025-04-27T15:44:17.861000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}, 'user_id': '311225013648752643', 'suppress': False, 'session_id': 'aec9c0dc5888f1cb9c68d9f87485b465', 'self_video': False, 'self_stream': True, 'self_mute': False, 'self_deaf': False, 'request_to_speak_timestamp': None, 'mute': False, 'guild_id': '1326596502298169486', 'discoverable': True, 'deaf': False, 'channel_id': '1326596503107665964'}}
+[30;1m2025-10-08 17:48:24[0m [40;1mDEBUG   [0m [35mdiscord.client[0m Dispatching event socket_event_type
+[30;1m2025-10-08 17:48:24[0m [40;1mDEBUG   [0m [35mdiscord.client[0m Dispatching event voice_state_update
+[30;1m2025-10-08 17:48:37[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 8.
+[30;1m2025-10-08 17:48:37[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:49:18[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 8.
+[30;1m2025-10-08 17:49:19[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:50:00[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 8.
+[30;1m2025-10-08 17:50:00[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:50:41[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 8.
+[30;1m2025-10-08 17:50:41[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:51:22[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 8.
+[30;1m2025-10-08 17:51:22[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:52:03[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 8.
+[30;1m2025-10-08 17:52:04[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:52:45[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 8.
+[30;1m2025-10-08 17:52:45[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:53:26[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 8.
+[30;1m2025-10-08 17:53:26[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:54:07[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 8.
+[30;1m2025-10-08 17:54:07[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:54:48[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 8.
+[30;1m2025-10-08 17:54:49[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
