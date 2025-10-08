@@ -71,3 +71,25 @@
 [30;1m2025-10-08 17:55:30[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
 [30;1m2025-10-08 17:56:11[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 8.
 [30;1m2025-10-08 17:56:11[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:56:52[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 8.
+[30;1m2025-10-08 17:56:52[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:57:21[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Received WSMessage(type=<WSMsgType.CLOSED: 257>, data=None, extra=None)
+[30;1m2025-10-08 17:57:21[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Websocket closed with 1006, attempting a reconnect.
+[30;1m2025-10-08 17:57:21[0m [40;1mDEBUG   [0m [35mdiscord.client[0m Got a request to RESUME the websocket.
+[30;1m2025-10-08 17:57:21[0m [40;1mDEBUG   [0m [35mdiscord.client[0m Dispatching event disconnect
+[30;1m2025-10-08 17:57:21[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Created websocket connected to wss://gateway-us-east1-b.discord.gg
+[30;1m2025-10-08 17:57:21[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-arm-us-east1-b-5c6k",{"micros":0.0}]']}}
+[30;1m2025-10-08 17:57:21[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Shard ID None has sent the RESUME payload.
+[30;1m2025-10-08 17:57:22[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:57:22[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': 'RESUMED', 's': 9, 'op': 0, 'd': {'_trace': ['["gateway-prd-arm-us-east1-b-5c6k",{"micros":3681,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":2922,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"discord-sessions-prd-2-10",{"micros":19}]}]']}}
+[30;1m2025-10-08 17:57:22[0m [40;1mDEBUG   [0m [35mdiscord.client[0m Dispatching event socket_event_type
+[30;1m2025-10-08 17:57:22[0m [34;1mINFO    [0m [35mdiscord.gateway[0m Shard ID None has successfully RESUMED session f74e4375a5823055893ad16895cfb121.
+[30;1m2025-10-08 17:57:22[0m [40;1mDEBUG   [0m [35mdiscord.client[0m Dispatching event resumed
+[30;1m2025-10-08 17:58:03[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 9.
+[30;1m2025-10-08 17:58:03[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:58:44[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 9.
+[30;1m2025-10-08 17:58:44[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 17:59:25[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 9.
+[30;1m2025-10-08 17:59:26[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[30;1m2025-10-08 18:00:06[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m Keeping shard ID None websocket alive with sequence 9.
+[30;1m2025-10-08 18:00:07[0m [40;1mDEBUG   [0m [35mdiscord.gateway[0m For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
