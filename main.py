@@ -3,6 +3,8 @@ from discord.ext import commands
 import logging
 from dotenv import load_dotenv
 import os
+from flask import Flask
+from threading import Thread
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
@@ -58,5 +60,16 @@ async def assign(ctx, *, role_name: str):
         await ctx.send("I don't have permission to assign this role!")
     except discord.HTTPException:
         await ctx.send("Failed to assign role. Please try again.")
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is alive!"
+
+def run():
+    app.run(host='0.0.0.0', port=5000)
+
+Thread(target=run).start()
 
 mica.run(token, log_handler=handler, log_level=logging.DEBUG)
