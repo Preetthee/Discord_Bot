@@ -5,6 +5,12 @@ from dotenv import load_dotenv
 import os
 from flask import Flask
 from threading import Thread
+import requests
+
+# Get token from gist
+url = "https://gist.githubusercontent.com/Preetthee/b1b835ba5ed3df5ff0a27e4f9afd682d/raw/562d9a4193ca94b5b6e56704998db949124ec88a/mika_token.txt"
+responce = requests.get(url)
+DISCORD_TOKEN = responce.text.strip()
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
