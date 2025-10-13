@@ -13,7 +13,7 @@ responce = requests.get(url)
 DISCORD_TOKEN = responce.text.strip()
 
 load_dotenv()
-token = os.getenv('DISCORD_TOKEN')
+token = os.getenv(DISCORD_TOKEN)
 
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
 intents = discord.Intents.default()
@@ -38,9 +38,8 @@ async def on_message(message):
         return
     
     if "shit" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention} dont use that word!")
-    
+        censored = message.content.replace("shit","****")
+        await message.edit(content=censored)
     await mica.process_commands(message)
 
 @mica.command()
