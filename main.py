@@ -6,14 +6,29 @@ import os
 from flask import Flask
 from threading import Thread
 import requests
-
-# Get token from gist
-url = "https://gist.githubusercontent.com/Preetthee/b1b835ba5ed3df5ff0a27e4f9afd682d/raw/562d9a4193ca94b5b6e56704998db949124ec88a/mika_token.txt"
-responce = requests.get(url)
-DISCORD_TOKEN = responce.text.strip()
+import re
 
 load_dotenv()
-token = os.getenv(DISCORD_TOKEN)
+
+# Resolve token: prefer local env, fallback to gist
+def resolve_token() -> str:
+    env_token = os.getenv("DISCORD_TOKEN")
+    if env_token:
+        return env_token.strip()
+
+    url = (
+        "https://gist.githubusercontent.com/Preetthee/"
+        "b1b835ba5ed3df5ff0a27e4f9afd682d/raw/"
+        "562d9a4193ca94b5b6e56704998db949124ec88a/mika_token.txt"
+    )
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        return response.text.strip()
+    except requests.RequestException as e:
+        raise RuntimeError(f"Failed to obtain Discord token: {e}")
+
+token = resolve_token()
 
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
 intents = discord.Intents.default()
@@ -37,9 +52,19 @@ async def on_message(message):
     if message.author == mica.user:
         return
     
-    if "shit" in message.content.lower():
-        censored = message.content.replace("shit","****")
-        await message.edit(content=censored)
+    # Simple profanity filter: delete and repost censored content
+    content_lower = message.content.lower()
+    if "shit" in content_lower:
+        try:
+            await message.delete()
+            censored = re.sub(r"(?i)shit", "****", message.content)
+            await message.channel.send(f"{message.author.mention} said: {censored}")
+        except discord.Forbidden:
+            await message.channel.send(
+                f"{message.author.mention}, please avoid profanity."
+            )
+        except discord.HTTPException:
+            pass
     await mica.process_commands(message)
 
 @mica.command()
